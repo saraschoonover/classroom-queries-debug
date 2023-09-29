@@ -3,7 +3,7 @@
 </h1>
 
 <hr>
-
+  
 <form action="/insert_department" method="post">
   <div>
     <label for="name_box">
@@ -37,15 +37,15 @@
   <% @departments.each do |department| %>
     <tr>
       <td>
-        <%= @department.id %>
+        <%= department.id %>
       </td>
 
       <td>
-        <%= @department.name %>
+        <%= department.name %>
       </td>
 
       <td>
-        <a href="/departments/<%= @department.id %>">
+        <a href="/departments/<%= department.id %>">
           Show details
         </a>
       </td>
